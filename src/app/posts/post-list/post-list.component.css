@@ -1,0 +1,42 @@
+mat-expansion-panel{
+
+    width: 80%;
+
+    margin: auto;
+}
+
+.mat-accordion{
+
+    display: block;
+    margin-top: 2rem;
+}
+
+
+
+
+.info-text{
+
+    text-align:center;
+}
+
+
+mat-spinner {
+    margin:auto;
+
+    display: flex;
+
+    align-content: center;
+
+    align-items: center;
+
+
+}
+
+.post-image{
+
+    width:100%;
+}
+
+.post-image img{
+    width:100%
+}

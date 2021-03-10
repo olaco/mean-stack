@@ -1,0 +1,26 @@
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+a{
+
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.spacer{
+
+  flex: 1 1 auto
+}
+
+
+.navbar{
+
+  display: flex;
+
+  flex-direction: row;
+}
