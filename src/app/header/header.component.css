@@ -24,3 +24,7 @@ a{
 
   flex-direction: row;
 }
+
+ul{
+  display:flex
+}
