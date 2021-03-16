@@ -15,6 +15,8 @@ const Post= require('./models/post')
 
 const app= express();
 
+const userRoutes= require('./route/user');
+
 
 
 // mongodb+srv://dapo:<password>@cluster0.5mjd2.mongodb.net/<dbname>?retryWrites=true&w=majority
@@ -60,6 +62,11 @@ app.use(bodyParser.urlencoded({extended: false}));
 // require path
 
 app.use("/images", express.static(path.join("backend/images")));
+
+
+// to make sure we have api in front of this route to signin , login user
+
+app.use("api/user", userRoutes);
 
 
 
