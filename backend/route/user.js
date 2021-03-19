@@ -1,6 +1,6 @@
 const express =  require('express');
 
-const bycrpt = require('bcrypt');
+const bcrypt = require("bcryptjs"); // encryption functionalities
 
 const User= require('../models/user');
 
@@ -13,7 +13,7 @@ router.post("/signup", (req, res, next) => {
 
   // create a new user and store in the database  - first create a mongoose model
   // In backend/route/models     - add user.js
-  bycrypt.hash(req.body.password)
+  bcrypt.hash(req.body.password, 10)
   .then(hash => {
 
     const user = new User({
